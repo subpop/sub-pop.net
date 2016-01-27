@@ -1,0 +1,13 @@
+<h1 class="site-title">
+  <span class="base05">[</span><span class="base08">m</span><span class="base09">o</span><span class="base0a">x</span><span class="base0b">b</span><span class="base0c">a</span><span class="base0d">n</span><span class="base0f">t</span><span class="base05">]</span>
+  <span class="base05"># _</span>
+</h1>
+
+<h1 class="headline">About</h1>
+<div class="article-list">
+<article class="list-item">
+{{ range first 1 (where .Data.Pages "Title" "About") }}
+	{{ .Content }}
+{{ end }}
+</article>
+</div>

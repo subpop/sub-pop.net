@@ -1,0 +1,5 @@
+baseurl = "http://moxbant.net/"
+languageCode = "en-us"
+title = "moxbant"
+pygmentuseclasses = true
+theme = "base16"
