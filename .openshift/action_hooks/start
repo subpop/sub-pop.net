@@ -2,4 +2,4 @@
 # The logic to start up your application should be put in this
 # script. The application will work only if it binds to
 # $OPENSHIFT_DIY_IP:8080
-nohup $OPENSHIFT_REPO_DIR/bin/hugo --bind=$OPENSHIFT_DIY_IP --port 8080 -s $OPENSHIFT_REPO_DIR |& /usr/bin/logshifter -tag diy &
+nohup $OPENSHIFT_REPO_DIR/bin/hugo --bind=$OPENSHIFT_DIY_IP --port 8080 -s $OPENSHIFT_REPO_DIR server |& /usr/bin/logshifter -tag diy &
