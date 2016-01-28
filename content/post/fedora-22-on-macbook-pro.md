@@ -3,12 +3,8 @@ date = "2015-09-20T22:17:00-08:00"
 draft = false
 title = "Fedora 22 on MacBook Pro"
 slug = "fedora-22-on-macbook-pro"
-aliases = [
-	"fedora-22-on-macbook-pro"
-]
-categories = [
-	"Linux"
-]
+aliases = ["fedora-22-on-macbook-pro"]
+topics = ["Linux"]
 +++
 My main laptop happens to be a MacBookPro8,2. I found that Fedora 22 does not install seamlessly on this machine, given the nature of two key pieces of hardware: wireless and hybrid graphics.
 

@@ -3,12 +3,8 @@ date = "2015-12-31T23:52:00-08:00"
 draft = false
 title = "Fedora 23 on System76 Oryx Pro"
 slug = "fedora-23-on-system76-oryx-pro"
-aliases = [
-	"fedora-23-on-system76-oryx-pro"
-]
-categories = [
-	"Linux"
-]
+aliases = ["fedora-23-on-system76-oryx-pro"]
+categories = ["Linux"]
 +++
 I recently bought a System76 Oryx Pro, and have been getting myself familiar with it. Not satisfied with Ubuntu and Unity, I set out to install Fedora 23.
 

@@ -3,12 +3,8 @@ date = "2015-12-06T22:53:00-08:00"
 draft = false
 title = "Doxie Scanner on Linux"
 slug = "doxie-scanner-on-linux"
-aliases = [
-	"doxie-scanner-on-linux"
-]
-categories = [
-	"Linux"
-]
+aliases = ["doxie-scanner-on-linux"]
+topics = ["Linux"]
 +++
 I forget where I found this, but I'm documenting here for posterity. In order to get a Doxie scanner running under Linux, install the `sane-backends-drivers-scanners` package is installed. Then put the following into a local udev rule:
 

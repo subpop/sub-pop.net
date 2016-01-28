@@ -3,12 +3,8 @@ date = "2015-12-31T23:57:00-08:00"
 draft = false
 title = "Better Font Rendering in Fedora"
 slug = "better-font-rendering-in-fedora"
-aliases = [
-	"better-font-rendering-in-fedora"
-]
-categories = [
-	"Linux"
-]
+aliases = ["better-font-rendering-in-fedora"]
+topics = ["Linux"]
 +++
 I'm not going to go into the philosophical argument about free software. If you want better font rendering, this is what I do.
 
