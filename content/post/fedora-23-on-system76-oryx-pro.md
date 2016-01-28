@@ -36,7 +36,7 @@ Enable [rpmfusion](http://rpmfusion.org) and install `akmod-nvidia`. The `nouvea
 
 This was the most perplexing thing I encountered. `/sys/class/backlight/acpi_video0` exists, the backlight hotkeys in GNOME change the value in `actual_brightness` as expected, but the backlight itself never adjusts. I found that `xbacklight` *will* adjust the brightness though, and after much research, I found [this wiki article on the Archlinux wiki](https://wiki.archlinux.org/index.php/Backlight#sysfs_modified_but_no_brightness_change). They blame either the BIOS vendor or the GPU vendor, but either way, I'm stuck without a reasonable way to adjust backlight settings. So I created `~/.local/bin/xbacklightd`, containing:
 
-{{< highlight bash >}}
+```
 #!/bin/bash
 max=/sys/class/backlight/acpi_video0/max_brightness
 level=/sys/class/backlight/acpi_video0/actual_brightness
@@ -47,7 +47,7 @@ xbacklight -set $(xblevel)
 inotifywait -m -qe modify $level | while read -r file event; do
     xbacklight -set $(xblevel)
 done
-{{< /highlight >}}
+```
 
 And a corresponding `~/.config/systemd/user/xbacklightd.service`, containing:
 
