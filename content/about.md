@@ -8,6 +8,6 @@ Open source software fanatic, and table-top gamer. My Linux of choice is [Fedora
 
 * Email: [yvax@snfgznvy.pbz](http://vinx.tuxfamily.org/rot13.html)
 * Jabber: [yvax@wnoore.ng](http://vinx.tuxfamily.org/rot13.html)
-* Twitter: [@moxbant](http://twitter.com/moxbant)
-* GNUSocial: [@moxbant](http://loadaverage.org/moxbant)
+* Twitter: [@0x007f](http://twitter.com/0x007f)
+* GNUSocial: [@0x7f](http://loadaverage.org/0x7f)
 * IRC: [sub_pop](irc://irc.freenode.net)
