@@ -10,5 +10,5 @@ nohup $OPENSHIFT_REPO_DIR/bin/hugo \
 	--watch=false \
 	--appendPort=false \
 	--disableLiveReload=true \
-	--baseURL="http://$OPENSHIFT_APP_DNS" \
+	--baseURL="http://0x7f.link/" \
 	server |& /usr/bin/logshifter -tag diy &
