@@ -1,8 +1,11 @@
-baseurl = "http://blog-subpopculture.rhcloud.com/"
+baseurl = "http://0x7f.link/"
 languageCode = "en-us"
-title = "moxbant"
-pygmentsstyle = "tango"
+title = "0x7f"
 theme = "hugo-bootstrap"
 
+[author]
+	name = "Link Dupont"
+	email = "link@fastmail.com"
+
 [params]
-	highlight = "default"
+	highlight = "solarized_light"
