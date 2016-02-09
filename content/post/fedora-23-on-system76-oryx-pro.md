@@ -16,13 +16,43 @@ While you're in the BIOS, enable the hybrid GPU. This will turn on an Intel inte
 
 ## Installation ##
 
-Installation works flawlessly.
+To get the installer to boot, you need to disable the `nouveau` driver. Edit the boot line (by pressing Tab when instructed) and add `nouveau.modeset=0` to the kernel boot parameters. Once booted, install as normal.
 
 ## Post-installation ##
+
+On first reboot, once you're at the GRUB boot line, press 'E' to edit the GRUB boot script. Change the first(ish) line from `set gfxpayload=keep` to `set gfxpayload=text`. For good measure, scroll down to the `linux` line, and add `nouveau.modeset=0` there too.
+
+### GRUB ###
+
+Append `GRUB_GFXPAYLOAD_LINUX=text` to `/etc/default/grub` (or install my `system76-driver` package from copr, which does this for you).
+
+```
+sudo echo GRUB_GFXPAYLOAD_LINUX=text >> /etc/default/grub
+sudo grub2-mkconfig -o /boot/grub2/grub.cfg
+```
 
 ### Bumblebee ###
 
 Follow the [instructions](http://fedoraproject.org/wiki/Bumblebee) for setting up bumblebee on the Fedora wiki and all the issues described below are avoided. I'm leaving them here for posterity.
+
+## Summary ##
+
+In the end, your /etc/default/grub should look like this:
+
+```
+GRUB_TIMEOUT=5
+GRUB_DISTRIBUTOR="$(sed 's, release .*$,,g' /etc/system-release)"
+GRUB_DEFAULT=saved
+GRUB_DISABLE_SUBMENU=true
+GRUB_TERMINAL_OUTPUT="console"
+GRUB_CMDLINE_LINUX="nouveau.modeset=0 rd.driver.blacklist=nouveau rhgb quiet"
+GRUB_DISABLE_RECOVERY="true"
+GRUB_GFXPAYLOAD_LINUX=text
+```
+
+## Non-Issues ##
+
+These notes are non-issues if you set up Bumblebee and the `GRUB_GFXPAYLOAD_LINUX` variable.
 
 ### GDM Lag ###
 
