@@ -24,7 +24,7 @@ On first reboot, once you're at the GRUB boot line, press 'E' to edit the GRUB b
 
 ### GRUB ###
 
-Append `GRUB_GFXPAYLOAD_LINUX=text` to `/etc/default/grub` (or install my `system76-driver` package from copr, which does this for you).
+Append `GRUB_GFXPAYLOAD_LINUX=text` to `/etc/default/grub` (or install my `system76-driver` [package from copr](https://copr.fedorainfracloud.org/coprs/linkdupont/fedora-link-extras/package/system76-driver/), which does this for you).
 
 ```
 sudo echo GRUB_GFXPAYLOAD_LINUX=text >> /etc/default/grub
