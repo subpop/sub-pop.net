@@ -1,11 +1,10 @@
-baseurl = "http://0x7f.link/"
+baseurl = "http://sub-pop.net/"
 languageCode = "en-us"
-title = "0x7f"
+title = "sub-pop"
 theme = "hugo-bootstrap"
 
 [author]
 	name = "Link Dupont"
-	email = "link@fastmail.com"
 
 [params]
 	highlight = "solarized_light"
