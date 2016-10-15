@@ -21,3 +21,10 @@ Create a `scanner` group and add your user to it.
 sudo groupadd -r scanner
 sudo usermod -G scanner -a link
 ```
+
+Reboot for the group change to take effect. After logging back in, calibrate the scanner:
+
+```
+scanimage --list-devices
+scanimage --device genesys:libusb:001:00X --calibrate []
+```
