@@ -2,6 +2,7 @@
 title: 'Common Job Description Mistakes'
 date: '2018-04-26'
 type: 'post'
+draft: false
 ---
 
 When writing a job description, don't make these common mistakes or fall prey
