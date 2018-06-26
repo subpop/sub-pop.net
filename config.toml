@@ -1,7 +1,7 @@
 baseurl = "http://sub-pop.net/"
 languageCode = "en-us"
 title = "sub-pop"
-theme = "hugo-xmin"
+theme = "hugo-classic"
 
 [author]
 	name = "Link Dupont"
