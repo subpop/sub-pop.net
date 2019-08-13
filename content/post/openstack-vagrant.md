@@ -1,7 +1,7 @@
 ---
 title: "Running OpenStack in Vagrant via RDO"
 date: 2019-08-13T15:22:14-04:00
-draft: true
+draft: false
 ---
 
 This is how to run a single-node OpenStack cluster using the [RDO project](https://rdoproject.org)'s
