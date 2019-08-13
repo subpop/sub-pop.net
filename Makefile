@@ -6,4 +6,4 @@ build:
 	hugo
 
 publish:
-	cd public && rsync -avr --rsh=ssh * dh_7yy6kj@tricia-mcmillan.dreamhost.com:~/sub-pop.net/
+	cd public && rsync -avr --delete-after --rsh=ssh * subpop@lynx.mythic-beasts.com:~/www/sub-pop.net/
