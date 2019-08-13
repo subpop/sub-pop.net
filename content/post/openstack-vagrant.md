@@ -7,7 +7,7 @@ draft: false
 This is how to run a single-node OpenStack cluster using the [RDO project](https://rdoproject.org)'s
 [packstack](https://rdoproject.org/install/packstack/) installation utility.
 I packed everything into a `Vagrantfile` so it can easily be redeployed.
-Huge credit goes to [codingpackets.com](https://codingpackets.com) for
+Huge credit goes to [codingpackets.com](https://codingpackets.com/blog/openstack-packstack-install) for
 providing the `answers.cfg` and network requirements. I don't honestly know
 yet why the network requirements are such; I just know this works.
 
