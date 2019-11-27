@@ -1,29 +1,10 @@
 baseurl = "http://sub-pop.net/"
 languageCode = "en-us"
 title = "sub-pop"
-theme = "hugo-classic"
+theme = "nofancy"
 
 [author]
 	name = "Link Dupont"
 
 [params]
-
-[[menu.main]]
-    name = "Home"
-    url = "/"
-    weight = 1
-[[menu.main]]
-    name = "About"
-    url = "/about/"
-    weight = 2
-[[menu.main]]
-    name = "Categories"
-    url = "/categories/"
-    weight = 3
-[[menu.main]]
-    name = "Tags"
-    url = "/tags/"
-    weight = 4
-[[menu.main]]
-    name = "Subscribe"
-url = "/index.xml"
+    topmenu="none"
