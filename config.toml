@@ -8,3 +8,7 @@ theme = "smol"
 
 [params]
     topmenu="none"
+
+[markup]
+  [markup.highlight]
+    style = "native"
