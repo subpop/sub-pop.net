@@ -5,7 +5,7 @@ date = 2021-07-06T21:59:42-04:00
 
 As part of my development workflow, I have found disposable, reproducible virtual machines indispensable. Over time, I have slowly developed a set of scripts and commands to create and destroy virtual machines. This time, those scripts and tools finally coalesced to something that can be packaged and released as a bit of developer software.
 
-devbox is a simple Makefile that generates disk images and libvirt domains. It is little more than a set of carefully crafted `virt-builder` and `virt-install` commands. See the [https://sr.ht/~spc/devbox](README) for details on how to use it.
+devbox is a simple Makefile that generates disk images and libvirt domains. It is little more than a set of carefully crafted `virt-builder` and `virt-install` commands. See the [README](https://sr.ht/~spc/devbox) for details on how to use it.
 
 After setting it up and defining a domain, I'm able to quickly connect to a centos-7 domain and run my code, jump over to a centos-8 domain and run the same code, and if need be, I can destroy one of these domains quickly and rebuild them.
 
