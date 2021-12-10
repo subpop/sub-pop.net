@@ -1,4 +1,4 @@
-baseurl = "http://sub-pop.net/"
+baseurl = "https://sub-pop.net/"
 languageCode = "en-us"
 title = "sub-pop"
 theme = "smol"
