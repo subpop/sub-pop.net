@@ -6,4 +6,4 @@ build:
 	hugo
 
 publish:
-	cd public && rsync -avr --delete-after --rsh=ssh * root@139.177.196.239:/var/www/sub-pop.net/
+	cd public && rsync -avr --delete-after --rsh=ssh * root@185.101.97.150:/data/www/sub-pop.net/
